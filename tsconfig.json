@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "module": "es2015",
+    "module": "esnext",
     "moduleResolution": "node",
-    "target": "es5",
+    "target": "es2015",
     "outDir": "dist/",
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
@@ -12,7 +12,7 @@
     "declaration": true,
     "skipLibCheck": true,
     "stripInternal": true,
-    "lib": ["es2015", "dom"]
+    "lib": ["es2018", "dom"]
   },
   "files": [
     "lib/angular-tree-component"
