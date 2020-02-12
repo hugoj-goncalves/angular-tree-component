@@ -25,7 +25,7 @@ fi
 
 # git pull origin master
 updateVersion
-build
+build || exit 2
 
 git status | grep 'nothing to commit'
 if [ $? -eq 1 ]; then
