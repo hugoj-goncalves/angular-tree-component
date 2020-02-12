@@ -14,7 +14,7 @@ function updateVersion {
 
 newVersion="$1"
 if [ -z "$newVersion" ]; then
-    newVersion="patch"
+    newVersion="prerelease"
 fi
 
 git status | grep 'nothing to commit'
