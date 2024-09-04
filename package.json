@@ -31,7 +31,7 @@
   ],
   "scripts": {
     "lint:lib": "ng lint angular-tree-component",
-    "build:lib": "npm run lint:lib && npm run clean:dist && ng build angular-tree-component",
+    "build:lib": "npm run clean:dist && ng build angular-tree-component",
     "build": "npm run build:lib",
     "clean:dist": "rimraf dist",
     "copy:files": "cp ./README.md ./dist/angular-tree-component && cp ./LICENSE ./dist/angular-tree-component && cp ./projects/angular-tree-component/src/lib/angular-tree-component.css ./dist/angular-tree-component/css/",
@@ -62,10 +62,10 @@
   ],
   "dependencies": {
     "@angular/animations": "^18.2.3",
-    "@angular/cdk": "^11.2.0",
+    "@angular/cdk": "^18.2.2",
     "@angular/forms": "^18.2.3",
-    "@angular/material": "^11.2.0",
-    "mobx": "~4.14.1"
+    "@angular/material": "^18.2.2",
+    "mobx": "~6.13.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.2",
@@ -86,14 +86,12 @@
     "@types/node": "^12.11.7",
     "@types/rx": "2.5.34",
     "@types/webpack": "^1.12.29",
+    "angular-eslint": "18.3.0",
     "codelyzer": "^6.0.0",
+    "eslint": "^9.9.0",
     "html-dnd": "1.2.0",
     "http-server": "0.9.0",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.7",
-    "ng-packagr": "^18.2.1",
-    "nightwatch": "0.9.12",
-    "prettier": "^1.19.1",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.4",
@@ -101,6 +99,10 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "lint-staged": "^10.0.7",
+    "ng-packagr": "^18.2.1",
+    "nightwatch": "0.9.12",
+    "prettier": "^1.19.1",
     "rimraf": "^2.5.1",
     "rxjs": "^6.5.3",
     "testcafe": "^1.8.8",
@@ -109,6 +111,7 @@
     "tslint": "~6.1.0",
     "typedoc": "^0.3.12",
     "typescript": "~5.4.5",
+    "typescript-eslint": "8.1.0",
     "uuid": "^8.2.0",
     "zone.js": "~0.14.10"
   },
