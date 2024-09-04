@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function build {
-  npm run build
+  npm run build && npm run copy:files
 }
 
 function updateVersion {

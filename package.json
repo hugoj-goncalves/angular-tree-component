@@ -34,7 +34,7 @@
     "build:lib": "npm run clean:dist && ng build angular-tree-component",
     "build": "npm run build:lib",
     "clean:dist": "rimraf dist",
-    "copy:files": "cp ./README.md ./dist/angular-tree-component && cp ./LICENSE ./dist/angular-tree-component && cp ./projects/angular-tree-component/src/lib/angular-tree-component.css ./dist/angular-tree-component/css/",
+    "copy:files": "mkdir -p ./dist/angular-tree-component/css && cp ./README.md ./dist/angular-tree-component && cp ./LICENSE ./dist/angular-tree-component && cp ./projects/angular-tree-component/src/lib/angular-tree-component.css ./dist/angular-tree-component/css/",
     "copy:files:win": "copy README.md .\\dist\\angular-tree-component && copy LICENSE .\\dist\\angular-tree-component && xcopy .\\projects\\angular-tree-component\\src\\lib\\angular-tree-component.css .\\dist\\angular-tree-component\\css\\",
     "doc": "typedoc --module commonjs --out doc lib/defs/api.ts",
     "clean:all": "npm run clean:dist && rimraf node_modules && npm cache clean",
