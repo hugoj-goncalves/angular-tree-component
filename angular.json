@@ -15,12 +15,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/example-app",
+            "outputPath": {
+              "base": "dist/example-app"
+            },
             "index": "projects/example-app/src/index.html",
-            "main": "projects/example-app/src/main.ts",
-            "polyfills": "projects/example-app/src/polyfills.ts",
+            "polyfills": [
+              "projects/example-app/src/polyfills.ts"
+            ],
             "tsConfig": "projects/example-app/tsconfig.app.json",
             "aot": false,
             "assets": [
@@ -29,12 +32,11 @@
             ],
             "styles": ["projects/example-app/src/styles.scss"],
             "scripts": [],
-            "vendorChunk": true,
             "extractLicenses": false,
-            "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "browser": "projects/example-app/src/main.ts"
           },
           "configurations": {
             "production": {
@@ -50,8 +52,6 @@
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -146,12 +146,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/docs-app",
+            "outputPath": {
+              "base": "dist/docs-app"
+            },
             "index": "projects/docs-app/src/index.html",
-            "main": "projects/docs-app/src/main.ts",
-            "polyfills": "projects/docs-app/src/polyfills.ts",
+            "polyfills": [
+              "projects/docs-app/src/polyfills.ts"
+            ],
             "tsConfig": "projects/docs-app/tsconfig.app.json",
             "aot": false,
             "assets": [
@@ -160,12 +163,11 @@
             ],
             "styles": ["projects/docs-app/src/styles.scss"],
             "scripts": [],
-            "vendorChunk": true,
             "extractLicenses": false,
-            "buildOptimizer": false,
             "sourceMap": true,
             "optimization": false,
-            "namedChunks": true
+            "namedChunks": true,
+            "browser": "projects/docs-app/src/main.ts"
           },
           "configurations": {
             "production": {
@@ -180,8 +182,6 @@
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
