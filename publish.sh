@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function build {
-  npm run build && npm run copy:files
+  npm run build && npm run copy:files && sed -i.bak "s/\"exports\":\s*{/\"exports\": \{\n\t\t\".\/css\/\*.css\"\: \".\/css\/\*.css\",/" ./dist/angular-tree-component/package.json
 }
 
 function updateVersion {
