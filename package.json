@@ -67,7 +67,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.2",
-    "@angular-devkit/build-ng-packagr": "^0.1002.0",
     "@angular-devkit/core": "^18.2.2",
     "@angular/cli": "^18.2.2",
     "@angular/common": "^18.2.3",
@@ -81,7 +80,7 @@
     "@angular/router": "^18.2.3",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.7",
+    "@types/node": "^18.19.50",
     "@types/rx": "2.5.34",
     "@types/webpack": "^1.12.29",
     "angular-eslint": "18.3.0",
@@ -90,7 +89,7 @@
     "html-dnd": "1.2.0",
     "http-server": "0.9.0",
     "husky": "^4.2.3",
-    "jasmine-core": "~3.6.0",
+    "jasmine-core": "~3.99.1",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.1.0",
@@ -104,7 +103,6 @@
     "rimraf": "^2.5.1",
     "rxjs": "^6.5.3",
     "testcafe": "^1.8.8",
-    "tsickle": "^0.38.1",
     "tslib": "^2.0.0",
     "tslint": "~6.1.0",
     "typedoc": "^0.3.12",
@@ -118,7 +116,7 @@
     "url": "https://github.com/CirclonGroup/angular-tree-component/issues"
   },
   "engines": {
-    "node": ">=10.21.0"
+    "node": ">=18.0.0"
   },
   "prettier": {
     "printWidth": 80,

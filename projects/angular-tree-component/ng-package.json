@@ -4,5 +4,6 @@
   "assets": ["src/lib/angular-tree-component.css"],
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": ["core-js", "lodash-es", "mobx"]
 }
