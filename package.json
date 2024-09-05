@@ -63,7 +63,7 @@
     "@angular/cdk": "^18.2.2",
     "@angular/forms": "^18.2.3",
     "@angular/material": "^18.2.2",
-    "mobx": "~6.13.1"
+    "mobx": "~4.14.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.2",
