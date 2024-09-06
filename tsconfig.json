@@ -21,11 +21,9 @@
     ],
     "paths": {
       "angular-tree-component": [
-        "dist/angular-tree-component",
         "dist/angular-tree-component"
       ],
       "angular-tree-component/*": [
-        "dist/angular-tree-component/*",
         "dist/angular-tree-component/*"
       ]
     },
@@ -35,6 +33,6 @@
   "buildOnSave": false,
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,
-    "enableIvy": false
+    "enableIvy": true
   }
 }
