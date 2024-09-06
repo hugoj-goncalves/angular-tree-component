@@ -1,8 +1,9 @@
 import { Injectable, OnDestroy } from '@angular/core';
-import { action, autorun, computed, makeObservable, observable } from 'mobx';
+import { autorun, makeObservable } from 'mobx';
 import { Subscription } from 'rxjs';
 import { TREE_EVENTS } from '../constants/events';
 import { IDType, IDTypeDictionary, ITreeModel } from '../defs/api';
+import { action, computed, observable } from '../mobx-angular/mobx-proxy';
 import { TreeNode } from './tree-node.model';
 import { TreeOptions } from './tree-options.model';
 import { TreeVirtualScroll } from './tree-virtual-scroll.model';

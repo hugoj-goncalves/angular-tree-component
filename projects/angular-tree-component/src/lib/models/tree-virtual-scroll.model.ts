@@ -1,13 +1,7 @@
 import { Injectable } from '@angular/core';
-import {
-  action,
-  autorun,
-  computed,
-  makeObservable,
-  observable,
-  reaction
-} from 'mobx';
+import { autorun, makeObservable, reaction } from 'mobx';
 import { TREE_EVENTS } from '../constants/events';
+import { action, computed, observable } from '../mobx-angular/mobx-proxy';
 import { TreeModel } from './tree.model';
 
 const Y_OFFSET = 500; // Extra pixels outside the viewport, in each direction, to render nodes in

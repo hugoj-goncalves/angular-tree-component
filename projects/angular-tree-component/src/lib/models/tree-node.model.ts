@@ -1,13 +1,7 @@
-import {
-  action,
-  computed,
-  IReactionDisposer,
-  makeObservable,
-  observable,
-  reaction
-} from 'mobx';
+import { IReactionDisposer, makeObservable, reaction } from 'mobx';
 import { TREE_EVENTS } from '../constants/events';
 import { ITreeNode } from '../defs/api';
+import { action, computed, observable } from '../mobx-angular/mobx-proxy';
 import { TreeOptions } from './tree-options.model';
 import { TreeModel } from './tree.model';
 
